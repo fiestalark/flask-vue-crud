@@ -1,0 +1,40 @@
+.DS_Store
+venv/
+
+
+# Python Bytecode and Cache Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite Database Files
+*.sqlite3
+*.db
+tasks.db
+
+# Migration Cache Files
+migrations/versions/__pycache__/
+migrations/__pycache__/
+
+# Log Files
+*.log
+logs/
+
+# Runtime Files
+*.pid
+*.seed
+*.cover
+
+# Environment Variables and Config Files
+.env
+*.env
+*.ini
+*.cfg
+config.py
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
