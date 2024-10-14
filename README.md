@@ -22,6 +22,10 @@ This is a project to learn how to connect Vue to Flask, following along [these i
 - You can clean the component up by moving the methods that make HTTP calls to a utils or services file.
 - Also, try to combine some of the methods that contain similar logic, like handleAddSubmit and handleEditSubmit.
 
+##### Delete Route
+- Instead of deleting on the button click, add a confirmation alert.
+- Display a "No books! Please add one." message when no books are present in the table.
+
 ##### Alerts:
 - Think about where showMessage should be set to false. Update your code.
 - Try using the Alert component to display errors.

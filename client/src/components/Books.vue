@@ -37,7 +37,12 @@
                                         @click="toggleEditBookModal(book)">
                                         Update
                                     </button>
-                                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                    <button 
+                                        type="button" 
+                                        class="btn btn-danger btn-sm"
+                                        @click="handleDeleteBook(book)">
+                                        Delete
+                                    </button>
                                 </div>
                             </td>
                         </tr>
@@ -313,6 +318,22 @@ export default {
             this.toggleEditBookModal(null);
             this.initForm();
             this.getBooks();
+        },
+        handleDeleteBook(book) {
+            this.removeBook(book.id);
+        },
+        removeBook(bookID) {
+            const path = `http://localhost:5000/books/${bookID}`;
+            axios.delete(path)
+                .then(() => {
+                    this.getBooks();
+                    this.message = 'Book removed!';
+                    this.showMessage = true;
+                })
+                .catch((error) => {
+                    console.error(error);
+                    this.getBooks();
+                });
         },
     },
     created() {
