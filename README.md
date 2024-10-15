@@ -9,6 +9,9 @@ This is a project to learn how to connect Vue to Flask, following along [these i
 
 ##### Erorr Handling
 - This tutorial only deals with the happy path. Handling errors is a separate exercise. Check your understanding and add proper error handling on both the front and back-end.
+    - Backend: 
+        - Database errors
+        - Invalid inputs
 
 ##### GET Route
 - Looking for an extra challenge? Write an automated test for this. Review this resource for more info on testing a Flask app.
@@ -30,3 +33,4 @@ This is a project to learn how to connect Vue to Flask, following along [these i
 - Think about where showMessage should be set to false. Update your code.
 - Try using the Alert component to display errors.
 - Refactor the alert to be dismissible.
+- Get alerts from backend responses
